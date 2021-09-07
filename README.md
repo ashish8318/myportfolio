@@ -14,7 +14,7 @@ funtionality of this product:-
 
 
 # Screenshot
-![](D:\New folder\Screenshot.png)
+![](myportfolio/portfolio/static/image/portfolio.png)
 
 # Files/foder in onlineshop app
 
