@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap');
+
+
+#name{font-family: 'KoHo', sans-serif;}
+#navbar{background-color: aquamarine; }
+#resume{background-color: rgb(127, 246, 255);
+        box-shadow:0px 5px 15px aquamarine; }
+#about{font-family: 'KoHo', sans-serif;}
+#skill{font-family: 'Raleway', sans-serif;}
+#skilltab{font-family: 'Farro', sans-serif;}
+.arrow{color: aqua;}
+html {
+    scroll-behavior: smooth;
+  }
+.Education{font-family: 'KoHo', sans-serif;} 
+

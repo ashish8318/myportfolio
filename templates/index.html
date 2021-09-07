@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href='{% static "css/uikit.min.css" %}'/>
+    <script src='{% static "js/uikit.min.js" %}'></script>
+    <script src='{% static "js/uikit-icons.min.js" %}'></script>
+    <script src='{% static "js/progress.js" %}'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "css/css.css" %}'>
+    <link rel="stylesheet" href='{% static "css/dark.css" %}'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <!-- google captcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body id="home">
+    <nav class="uk-navbar-container" uk-navbar id="navbar"
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+        <div class=" uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="#" id="name"><b>Ashish</b></a>
+
+        </div>
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a class="uk-margin-small-right" href=""><span uk-icon="menu"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#ab">About</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li><a href="#percantage">Skill Percentage</a></li>
+                            <li><a href="#certificate">Certificate</a></li>
+                            <li><a href="#project">Project</a></li>
+                            <li><a href="#Education">Education</a></li>
+                            <li><a href="#contect">contact</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="uk-margin-medium-right uk-margin-auto-top  uk-margin-auto-bottom"><label><input class="uk-radio" type="checkbox" checked id="darkbuttom"> Dark Mode</label></li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="uk-section uk-section-default" uk-height-match>
+        <div class="uk-flex uk-flex-center">
+            <div class=>
+                <h1 class="uk-heading-large" id="name" uk-scrollspy="cls: uk-animation-slide-top; delay:500; repeat: true"><strong>Hi<br>I'am<br>Ashish</strong></h1>
+                <a class="uk-button uk-button-success uk-button-medium download" id="resume" href="#modal-group-1" uk-toggle uk-scrollspy="cls: uk-animation-slide-top; delay:600; repeat: true"><b><span
+                            uk-icon="download"></span> Resume </b></a><br><br>
+                <a href="https://www.linkedin.com/in/ashish-kumar-2737b9169/" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin" uk-scrollspy="cls: uk-animation-slide-top; delay:700; repeat: true"></a>
+                <a href="https://github.com/ashish8318" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="github" uk-scrollspy="cls: uk-animation-slide-top; delay:800; repeat: true"></a>
+            </div>
+            <div class="uk-margin-xlarge-left" uk-scrollspy="cls: uk-animation-slide-top; delay:800; repeat: true">
+                <img class="uk-border-circle" width="650" height="650" src='{% static "image/method-draw-image.svg" %}'>
+                <!-- <img class="uk-border-circle" width="500" height="500" src="image/undraw_inspiration_lecl.svg"> -->
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <br id="ab"><br>
+    <hr>
+
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="uk-visible@m">
+                    <img class="" width="500" height="500" src='{% static "image/undraw_profile_details_f8b7.svg" %}'>
+                </div>
+                <div>
+                    <h1 class="uk-heading-bullet  uk-heading-medium ">About</h1>
+                    <p id="about" uk-scrollspy="cls: uk-animation-side-right; delay:500; repeat: true" class="uk-text-justify">As you know my name is Ashish Kumar. Currently, I am studying at college MCA program.I am basically form Varanasi U.P. I have done my BCA from MGKVP University. I am looking for good opportunity to enhance my knowledge in IT Technology (Web Development).<br>I started to learn web development a few year ago. I learned HTML, Bootstrap, Ui Kit, Python, Java, PHP, Flask, Django and git. I learn many technologies and I do some real-life project using Python, Djang, PHP.<br>I am always curies to learn new technology. My goal is to build successfull carrer as a web developer which can help as my company and me personally.</p>
+                    <a href="https://github.com/ashish8318" target="_blank" class="uk-button uk-button-success uk-button-medium" id="resume" uk-scrollspy="cls: uk-animation-side-right; delay:900; repeat: true"><b><span
+                                uk-icon="triangle-right"></span> Github Account</b></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="skill">
+        <path fill="#00cba9" fill-opacity="1"
+            d="M0,128L120,106.7C240,85,480,43,720,64C960,85,1200,171,1320,213.3L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+        </path>
+    </svg>
+
+    <h1 class="uk-heading-bullet  uk-heading-medium uk-text-center">Skill</h1>
+    <br>
+    <div class="uk-container uk-margin-auto" uk-grid uk-scrollspy="cls: uk-animation-side-top; delay:700; repeat: true" uk-grid>
+        <div>
+            <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+
+                <li id="skilltab"><a href="#">BOOTSTRAP</a></li>
+                <li id="skilltab"><a href="#">DJANGO REST</a></li>
+                <li id="skilltab"><a href="#">UI KIT</a></li>
+                <li id="skilltab"><a href="#">DJANGO</a></li>
+                <li id="skilltab"><a href="#">FLASK</a></li>
+                <li id="skilltab"><a href="#">PYTHON</a></li>
+                <li id="skilltab"><a href="#">JAVA</a></li>
+                <li id="skilltab"><a href="#">PHP</a></li>
+                <li id="skilltab"><a href="#">GIT</a></li>
+                <li id="skilltab"><a href="#">Data Structure</a></li>
+                <li id="skilltab"><a href="#">Database</a></li>
+            </ul>
+        </div>
+        <div class="uk-width-expand@s">
+            <ul id="component-tab-left" class="uk-switcher">
+                <li id="skill">I learned Bootstrap with Google,YouTube channel, and his Documentation. It is very powerfull Front-end Framwork to develop website design. I develop real life project online shopping . In this project for design purpose I use Bootstrap.</li>
+                <li id="skill">Django Rest framwork is a flexible toolkit for building web APIs. I am learned Django Rest framwork with YouTube channel and his Documentation. I am create a CURD project that souce code push my Github account.</li>
+                <li id="skill">Ui Kit is front-end framwork use to create a morden website. It is open-source and free. I learned Ui Kit with Google and his Documentation. I am use this in my real-life project Web Chat with Flask framwork. </li>
+                <li id="skill">Django is highe level python web framwork that enables rapid development of source and maintainable website. I learned Django in few years ago. I also complete certification in Django with Eduonix. I am create  project that is Online Shopping, Myportfolio.</li>
+                <li id="skill">Flask is a micro web framwork written in python. Extensions exist for object-relational mapper, Form Validation, Upload Handling Authentication. I am complete certification in falsk with Udemy. I create project web chat appliation in flask.</li>
+                <li id="skill">Python is an interpreted high level general purpose programing language. I learned Python in few year ago. I complete a Certification in Python with Microsoft Technology Associate. I am create project in Python user his Django and Flask framwork.</li>
+                <li id="skill">Java is a high-level class based, Object-orinented programming language. I learned Java in my college BCA program. I also complete certification in Java with HPE EDUCATION SERVICES.</li>
+                <li id="skill">PHP is a general purpose scripting language especially suited to web development. I learned PHP through WC3 website or YouTube channel. I am create a Blog project in PHP.</li>
+                <li id="skill">Git is software for tracking changes in any set of files, usually for coordinating work among programmers collacoratively developing source code. It goals include speed, data intigrity and support for distribuated. I am learn git from website or YouTube channel. So I am able to push my source code on Github.</li>
+                <li id="skill">In computer science, a data sturcture is a data organization management, and storage formate that enables efficient access and modification. I am learned Data Structure in my graduation time.</li>
+                <li id="skill">A Databse is an organized collection of data, genereally stored and accessed electronically from a computer system . I learned Databse in graduation time. I work with MYSQL, DB sqlite3 databse. In My PHP project I use Mysql databse and in Django, Falsk application sqlite3 databse. In Deployment time I use postgress databse on heroku.</li>
+            </ul>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#00cba9" fill-opacity="1"
+            d="M0,224L120,234.7C240,245,480,267,720,245.3C960,224,1200,160,1320,128L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+        </path>
+    </svg>
+    <br id="percantage"><br>
+    <hr>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="uk-visible@m">
+                    <img class="" width="100%" height="100%" src='{% static "image/undraw_percentages_0rur.svg" %}'>
+                </div>
+                <div>
+                    <h1 class="uk-heading-bullet  uk-heading-small ">Skill Percentage</h1>
+                    <div class="uk-child-width-1-2" uk-grid>
+                        <div uk-scrollspy="cls: uk-animation-side-right; target: .uk-progress; delay:500; repeat: true">
+                            <span class="uk-label uk-label-success">BOOTSTRAP</span>
+                            <progress id="js-progressbar1" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">DJANGO REST FRAMWORK</span>
+                            <progress id="js-progressbar2" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">UI KIT</span>
+                            <progress id="js-progressbar3" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">PYTHON</span>
+                            <progress id="js-progressbar4" class="uk-progress" value="0" max="100"></progress>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-side-right; target: .uk-progress; delay:700; repeat: true">
+
+                            <span class="uk-label uk-label-success">JAVA</span>
+                            <progress id="js-progressbar5" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">PHP</span>
+                            <progress id="js-progressbar6" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">DJANGO</span>
+                            <progress id="js-progressbar7" class="uk-progress" value="0" max="100"></progress>
+                            <span class="uk-label uk-label-success">FLASK</span>
+                            <progress id="js-progressbar8" class="uk-progress" value="0" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <br id="certificate"><br>
+    <h1 class="uk-heading-bullet  uk-heading-medium uk-text-center">Certification</h1><br>
+    <hr>
+
+    <div class="uk-position-relative" uk-slideshow="animation: fade">
+
+        <ul class="uk-slideshow-items">
+            {% for i in certificate %}
+            <li>
+                <img width="800" height="600" src='/media/{{i.Image}}' alt="" uk-cover>
+                <img width="800" height="600" src='{{i.Image.url}}' alt="" uk-cover>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div class="uk-position-bottom-center uk-position-small">
+            <ul class="uk-thumbnav">
+                {% for i in certificate %}
+                <li uk-slideshow-item='{{forloop.counter|add:"-1"}}'><a href="#"><img src='{{i.Image.url}}' width="100"
+                            alt=""></a></li>
+                {% endfor %}            
+                
+            </ul>
+        </div>
+
+    </div>
+
+
+    <hr><br id="project"><br>
+    <h1 class="uk-heading-bullet  uk-heading-medium uk-text-center">My Project</h1><br>
+    <div class="uk-container">
+        <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-grid-match uk-grid-small " uk-grid uk-height-match uk-grid uk-scrollspy="cls: uk-animation-fade; target: .project; delay: 500; repeat: true">
+            {% for i in project %}
+            <div class="uk-text-center project">
+                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <!-- <img class="uk-height-medium uk-background-cover" src='{% static "image/undraw_contact_us_15o2.svg" %}' alt=""> -->
+                    <img class="uk-height-medium uk-background-cover" src='{{i.Image.url}}' alt="">
+
+                    <div
+                        class="uk-transition-slide-bottom uk-position-cover  uk-overlay uk-overlay-default uk-text-center  uk-background-muted">
+                        <p class="uk-h2 uk-margin-remove">{{i.Project_name}}</p><br>
+                        <a class="uk-button uk-button-success uk-button-medium" id="resume" href="{{i.Github_url}}"><b><span
+                                    uk-icon="triangle-right"></span>More</b></a>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+            
+            </div>
+        </div>
+    </div>
+
+    <br id="Education"><br>
+
+    <h1 class="uk-heading-bullet  uk-heading-medium uk-text-center">Education</h1>
+<br>
+    <div class="uk-flex uk-flex-center" >
+        <div class="uk-card uk-card-default uk-card-body uk-width-xlarge Education">
+        <ul uk-accordion>
+            <li class="uk-open">
+                <a class="uk-accordion-title .uk-text-bolder" href="#">High School</a>
+                <div class="uk-accordion-content">
+                    <hr>
+                    <p><b>Passing Year :</b> 2015</p>
+                    <p><b>Board :</b></p>
+                    <p><b>Percentage :</b>/p>
+                    <p><b>College :</b></p>
+                    
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title .uk-text-bolder" href="#">Intermediate School</a>
+                <div class="uk-accordion-content">
+                    <hr>
+                    <p><b>Passing Year :</b> 2017</p>
+                    <p><b>Board :</b></p>
+                    <p><b>Percentage :</b></p>
+                    <p><b>College :</b></p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title .uk-text-bolder" href="#">Graduation</a>
+                <div class="uk-accordion-content">
+                    <hr>
+                    <p><b>Passing Year :</b> 2020</p>
+                    <p><b>Cource :</b></p>
+                    <p><b>Percentage :</b></p>
+                    <p><b>College :</b></p>
+                </div>
+            </li>
+
+            <li>
+                <a class="uk-accordion-title .uk-text-bolder" href="#">Post Graduation</a>
+                <div class="uk-accordion-content">
+                    <hr>
+                    <p><b>Passing Year :</b>Pursuing</p>
+                    <p><b>Cource :</b></p>
+                    <p><b>College :</b></p>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <br id="contect"><br>
+    <h1 class="uk-heading-bullet  uk-heading-medium uk-text-center">Contact</h1>
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-padding-small"><a href="mailto:ashishyadavupc@gmail.com" uk-icon="icon: mail"></a></div>
+        <div class="uk-padding-small"><a href="tel:+8471039760" uk-icon="icon: receiver"></a> +91 </div>
+        
+    </div>
+    <div class="uk-flex uk-flex-center" >
+        <div class="uk-card uk-card-default uk-card-body uk-width-xlarge">
+
+            <form class="uk-form-stacked" action='{% url "contect" %}' method="POST" novalidate>
+                {% csrf_token %}
+                <div class="uk-margin" uk-scrollspy="cls: uk-animation-side-top; delay:500; repeat: true; overflow:true;">
+                    <label class="uk-form-label" for="form-stacked-text"><b>Username</b></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Username" name="username">
+                    </div>
+                </div>
+                <div class="uk-margin" uk-scrollspy="cls: uk-animation-side-top; delay:600; repeat: true; overflow:true;">
+                    <label class="uk-form-label" for="form-stacked-email1"><b>Email</b></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-stacked-email1" type="text" placeholder="Email" name="email">
+                    </div>
+                </div>
+
+                <div class="uk-margin" uk-scrollspy="cls: uk-animation-side-top;  delay:700; repeat: true; overflow:true;">
+                    <label class="uk-form-label" for="form-stacked-textarea"><b>Email</b></label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" rows="5" id="form-stacked-textarea"
+                            placeholder="Message" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LerNeEaAAAAAP0KNDb0e_jnyIGEP4o7phSBq5Xv"></div>
+                <button class="uk-button uk-button-success uk-button-medium"id="resume" uk-scrollspy="cls: uk-animation-side-top;  delay:800; repeat: true"><b><span "></span>Submit</b></button>
+            </form>
+        </div>
+       
+    </div>
+    <br><br>
+    <div class=" uk-flex uk-flex-center">
+        <div class="uk-card uk-card-secondary uk-card-body uk-width-expand wk-height-medium uk-light uk-text-center">
+            <h3 class="uk-heading-medium uk-text-center ml3" id="name"><strong>Ashish Kumar</strong></h3>
+            <p class=" uk-text-muted uk-text-center">Email </p>
+            <a href="https://www.linkedin.com/in/ashish-kumar-2737b9169/" target="_blank" class="uk-icon-button uk-margin-small-right uk-margin-small-bottom" uk-icon="linkedin"></a>
+            <a href="https://github.com/ashish8318" target="_blank" class="uk-icon-button  uk-margin-small-right uk-margin-small-bottom" uk-icon="github"></a>
+            <div class="uk-text-center" uk-lightbox><a class="uk-button uk-button-default" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7209.049021425912!2d82.94761955738063!3d25.387247719804233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb4cf5a6ec39ca4d4!2sShri%20Sai%20Nath%20Mixer%20Machine!5e0!3m2!1sen!2sin!4v1621663925119!5m2!1sen!2sin" data-caption="Google Maps" data-type="iframe">My Home</a></div>
+            <p class=" uk-text-muted uk-text-center">Create by Ashish Kumar 2021</p>
+        </div>                     
+    </div>
+
+
+        <a class="uk-position-bottom-right uk-position-fixed uk-position-z-index uk-margin-right uk-margin-bottom arrow"
+            href="#home" uk-icon="icon:  arrow-up; ratio:2"></a>
+
+
+            <script>
+                // ====================================================
+             var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+//   ============================================================================
+
+{% for message in messages %}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+    UIkit.notification({
+    message:" {{message}} ",
+    status: 'danger',
+    pos: 'top-center',
+    timeout: 10000 });
+    {% endif %}
+    {% if message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+    
+    UIkit.notification({
+    message:"{{message}}",
+    status: 'success',
+    pos: 'top-center',
+    timeout: 10000
+});
+    {% endif %}
+    {% endfor %}
+    
+
+
+    </script>    
+<script src='{% static "js/dark.js" %}'></script>
+
+<!-- code for email verification -->
+
+<div id="modal-group-1" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+          
+        <div class="uk-modal-body">
+            <form class="uk-form-stacked" action="{% url 'sendlink' %}" method="POST" novalidate>
+                {% csrf_token %}
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-email"><b>Email</b></label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-stacked-email" type="email" placeholder="Enter Email" autofocus name="email">
+                    </div>
+                </div>
+              
+    
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button  class="uk-button" id="resume" type="submit"><b>Submit</b></buttont>
+        </div>
+    </form>
+    </div>
+</div>  
+
+</body>
+</html>
