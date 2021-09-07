@@ -14,7 +14,7 @@ funtionality of this product:-
 
 
 # Screenshot
-![](myportfolio/portfolio/static/image/portfolio.png)
+![](portfolio/static/image/portfolio.png)
 
 # Files/foder in onlineshop app
 
